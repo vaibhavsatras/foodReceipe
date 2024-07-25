@@ -6,7 +6,7 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { IoMdMail } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
-import ForgotPassword from './forgotpassword'
+import ForgotPassword from './forgotPassword'
 
 
 
