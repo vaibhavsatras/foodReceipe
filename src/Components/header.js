@@ -10,7 +10,7 @@ function Header() {
 
     window.addEventListener('scroll',(e)=>{
 
-          if(scrollY > 0)
+          if(window.screenY > 0)
             {
                 setFlafg(true)
             }
@@ -23,7 +23,7 @@ function Header() {
 
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 py-0 ${flag ? "dark transition-all ease-out duration-300 shadow-lg ":"bg-transparent transition-all ease-out duration-300"} `}>
+    <div className={`fixed top-0 left-0 right-0 z-50 py-0 ${flag ? 'dark transition-all ease-out duration-300 shadow-lg ':'bg-transparent transition-all ease-out duration-300'} `}>
             <div className='max-w-screen-xl md:mx-20 mx-10'>
                 <div className='max-[550px]:hidden'>
                     <DekstopNav menu={menu} />
