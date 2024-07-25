@@ -57,7 +57,7 @@ function SignIn(){
 
   return (
     <>
-      <dialog id="my_modal_2_1" className="modal">
+      <dialog id="my_modal_2" className="modal">
         <div className="modal-box bg-white rounded-lg shadow relative dark:bg-white">
 
         <form method="dialog" >
