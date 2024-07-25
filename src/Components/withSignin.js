@@ -5,10 +5,13 @@ import {useNavigate} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 function WithSignIn(OldComp){  
+    
     return (props)=>{
+        
         const navigate = useNavigate()
     const {reset} = useForm()
         const[flag,setFlag] = useState(false)
+        
         function SubmitForm(data)
         {
           
