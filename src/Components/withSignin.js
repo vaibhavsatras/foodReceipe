@@ -6,9 +6,8 @@ import Cookies from 'js-cookie'
 
 function WithSignIn(OldComp){
 
+    const navigate = useNavigate()
     return (props)=>{
-
-        const navigate = useNavigate()
     
         const {reset} = useForm()
         const[flag,setFlag] = useState(false)
