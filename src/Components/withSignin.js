@@ -1,64 +1,64 @@
 
-import React, {useState } from 'react'
-import {useForm} from 'react-hook-form'
-import {useNavigate} from 'react-router-dom'
-import Cookies from 'js-cookie'
+// import React, {useState } from 'react'
+// import {useForm} from 'react-hook-form'
+// import {useNavigate} from 'react-router-dom'
+// import Cookies from 'js-cookie'
 
-function WithSignIn(OldComp){  
+// function WithSignIn(OldComp){  
     
-    return (props)=>{
+//     return (props)=>{
         
-        const navigate = useNavigate()
-    const {reset} = useForm()
-        const[flag,setFlag] = useState(false)
+//         const navigate = useNavigate()
+//     const {reset} = useForm()
+//         const[flag,setFlag] = useState(false)
         
-        function SubmitForm(data)
-        {
+//         function SubmitForm(data)
+//         {
           
-          fetch('http://localhost:8000/user/signIn',{
+//           fetch('http://localhost:8000/user/signIn',{
     
-            method: 'POST',
-            headers:{
-              'Content-Type':'application/json'
-            },
-            body: JSON.stringify(data)
-          }).then((user)=>{
+//             method: 'POST',
+//             headers:{
+//               'Content-Type':'application/json'
+//             },
+//             body: JSON.stringify(data)
+//           }).then((user)=>{
     
-              return user.json()
+//               return user.json()
     
-          }).then((data)=>{
+//           }).then((data)=>{
             
-            if(data.token)
-              {
-                const value = JSON.stringify(data.token)
-                Cookies.set('token',value,{secure:true, sameSite: 'strict',expires: 1 })
-                navigate('/')
-              }
-              else 
-              {
-                alert('Please Enter Correct Password..')
-              }
+//             if(data.token)
+//               {
+//                 const value = JSON.stringify(data.token)
+//                 Cookies.set('token',value,{secure:true, sameSite: 'strict',expires: 1 })
+//                 navigate('/')
+//               }
+//               else 
+//               {
+//                 alert('Please Enter Correct Password..')
+//               }
     
-          })
+//           })
     
-          reset()
-        }
+//           reset()
+//         }
       
-        function goPage()
-        {
-          navigate('/')
-        }
+//         function goPage()
+//         {
+//           navigate('/')
+//         }
         
-        return(
+//         return(
         
-        <>
-            <OldComp {...props} flag={flag} setFlag={setFlag} SubmitForm={(data)=>SubmitForm(data)} goPage={goPage}
+//         <>
+//             <OldComp {...props} flag={flag} setFlag={setFlag} SubmitForm={(data)=>SubmitForm(data)} goPage={goPage}
 
-            />
-        </>)
+//             />
+//         </>)
 
-    }
+//     }
 
-}
+// }
 
-export default WithSignIn
+// export default WithSignIn
