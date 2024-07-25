@@ -10,7 +10,7 @@ function Header() {
 
     window.addEventListener('scroll',(e)=>{
 
-          if(scrollY > 0)
+          if(window.scrollY > 0)
             {
                 setFlafg(true)
             }
