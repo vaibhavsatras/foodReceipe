@@ -4,13 +4,11 @@ import {useForm} from 'react-hook-form'
 import {useNavigate} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
-function WithSignIn(OldComp){
-
-    const navigate = useNavigate()
+function WithSignIn(OldComp){  
+    return (props)=>{
+        const navigate = useNavigate()
     const {reset} = useForm()
         const[flag,setFlag] = useState(false)
-      
-    return (props)=>{
         function SubmitForm(data)
         {
           
