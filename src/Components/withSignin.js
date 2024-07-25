@@ -7,12 +7,10 @@ import Cookies from 'js-cookie'
 function WithSignIn(OldComp){
 
     const navigate = useNavigate()
-    return (props)=>{
-    
-        const {reset} = useForm()
+    const {reset} = useForm()
         const[flag,setFlag] = useState(false)
       
-        
+    return (props)=>{
         function SubmitForm(data)
         {
           
