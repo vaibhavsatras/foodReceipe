@@ -14,7 +14,7 @@ function ForgotPasswordMobileView() {
     function ForGotPassword(data)
     { 
       
-         fetch('http://localhost:8000/user/forgotPassword',{
+         fetch('https://receipe-backend.vercel.app/user/forgotPassword',{
 
             method: 'POST',
             headers:{
