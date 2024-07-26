@@ -11,7 +11,7 @@ function ContactForm() {
 
   function SubmitForm(data)
   {
-    fetch('http://localhost:8000/addContact',{
+    fetch('https://receipe-backend.vercel.app/addContact',{
       
       method: 'POST',
       headers:{
