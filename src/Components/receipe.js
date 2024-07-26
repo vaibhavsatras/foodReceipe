@@ -26,7 +26,7 @@ function Receipe() {
 
     function getData()
     {
-        fetch('http://localhost:8000/products',{
+        fetch('https://receipe-backend.vercel.app/products',{
 
         }).then((products)=>{
 
