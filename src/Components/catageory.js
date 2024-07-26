@@ -32,7 +32,7 @@ function Catageory() {
 
    function SearchMenu()
    {
-    fetch(`http://localhost:8000/catageory/${cat}`,{
+    fetch(`https://receipe-backend.vercel.app/catageory/${cat}`,{
 
 
     }).then((data)=>{
