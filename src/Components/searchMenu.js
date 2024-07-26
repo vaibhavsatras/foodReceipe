@@ -30,7 +30,7 @@ function SearchMenu() {
   function searchItem()
   {
 
-    fetch(`http://localhost:8000/searchProducts/${serachText}`,{
+    fetch(`https://receipe-backend.vercel.app/searchProducts/${serachText}`,{
 
       
       headers:{
