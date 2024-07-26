@@ -21,7 +21,7 @@ function SignUp() {
 
     function SignupForm(data)
     {
-      fetch('http://localhost:8000/user/signUp',{
+      fetch('https://receipe-backend.vercel.app/user/signUp',{
 
         method: 'POST',
         headers: {
