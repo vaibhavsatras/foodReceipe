@@ -21,7 +21,7 @@ function SignIn(){
     function SubmitForm(data)
     {
       
-      fetch('http://localhost:8000/user/signIn',{
+      fetch('https://receipe-backend.vercel.app/user/signIn',{
 
         method: 'POST',
         headers:{
