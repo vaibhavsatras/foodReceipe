@@ -27,7 +27,7 @@ function Resources() {
 
   function getBlogs()
   {
-    fetch('http://localhost:8000/blogs',{
+    fetch('https://receipe-backend.vercel.app/blogs',{
 
       headers:{
 
